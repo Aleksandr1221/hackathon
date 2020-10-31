@@ -18,36 +18,40 @@
           <div class="col">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Название карточки</h5>
+                <h5 class="card-title">Иван Иванов Иванович</h5>
+                <h6 class="card-subtitle mb-2 text-muted">UI UX дизайнер</h6>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <button class="btn btn-primary">Добавить</button>
+                <button class="btn btn-primary">Добавить задачу</button>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Название карточки</h5>
+                <h5 class="card-title">Иван Иванов Иванович</h5>
+                <h6 class="card-subtitle mb-2 text-muted">UI UX дизайнер</h6>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <button class="btn btn-primary">Добавить</button>
+                <button class="btn btn-primary">Добавить задачу</button>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Название карточки</h5>
+                <h5 class="card-title">Иван Иванов Иванович</h5>
+                <h6 class="card-subtitle mb-2 text-muted">UI UX дизайнер</h6>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <button class="btn btn-primary">Добавить</button>
+                <button class="btn btn-primary">Добавить задачу</button>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Название карточки</h5>
+                <h5 class="card-title">Иван Иванов Иванович</h5>
+                <h6 class="card-subtitle mb-2 text-muted">UI UX дизайнер</h6>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <button class="btn btn-primary">Добавить</button>
+                <button class="btn btn-primary">Добавить задачу</button>
               </div>
             </div>
           </div>

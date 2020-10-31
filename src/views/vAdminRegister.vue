@@ -54,7 +54,6 @@ export default {
       firstname: '',
       lastname: '',
       middlename: '',
-      CompanyName: '',
       position: '',
       email: '',
       password: ''
@@ -68,7 +67,6 @@ export default {
         lastname: this.lastname,
         username: this.email,
         password: this.password,
-        companyName: this.CompanyName,
         position: this.position,
         fullName: `${this.lastname} ${this.firstname} ${this.middlename}`
       }).then(response => {

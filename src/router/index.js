@@ -43,6 +43,11 @@ const routes = [
     path: '/choiceUserAdmin',
     name: 'Choice User Admin',
     component:()=>import('../views/vChoiceUserAdmin.vue')
+  },
+  {
+    path: '/adminRating',
+    name: 'Admin rating',
+    component:()=>import('../views/vAdminRating.vue')
   }
 ]
 

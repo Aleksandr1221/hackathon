@@ -9,7 +9,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav burger-menu">
-            <a class="nav-link">Команда</a>
+            <a class="nav-link active">Команда</a>
             <a class="nav-link">Отчеты</a>
             <a class="nav-link">Рейтинг</a>
           </div>
@@ -20,9 +20,9 @@
     <div class="row m-0">
       <div class="col-3 pr-0 pl-0 saidbar">
         <ul class="list-group rounded-0">
-          <li class="list-group-item list-group-item-action p-3">Команда</li>
+          <router-link to="createTask" tag="li" class="list-group-item list-group-item-action active p-3">Команда</router-link>
           <li class="list-group-item list-group-item-action p-3">Отчеты</li>
-          <li class="list-group-item list-group-item-action p-3">Рейтинг</li>
+          <router-link to="/adminRating" tag="li" class="list-group-item list-group-item-action p-3">Рейтинг</router-link>
         </ul>
       </div>
       <div class="col-9 border-top pl-5 my_command mb-5">

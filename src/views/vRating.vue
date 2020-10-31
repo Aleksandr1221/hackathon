@@ -36,10 +36,11 @@ export default {
       location.href = 'todolist'
     },
     get_users: async function() {
-      await axios.get('https://vk-hack-ykt.herokuapp.com/registration/')
+      await axios.get('https://vk-hack-ykt.herokuapp.com/rating/reversed/')
       .then(response => (
         //console.log(response.data.find(element => element.roles[0].name == "ROLE_USER")),
-        this.ratingList = response.data,
+        
+        this.ratingList = response.data.filter(user => {return user.companys.length == 0}),
         console.log(response)
       ))
       .catch(error => (console.log(error)))

@@ -74,7 +74,7 @@ export default {
         //console.log(a.obj[0].fullname)
         localStorage.setItem('localEmail', a.obj[0].username)
         localStorage.setItem('localPass', a.obj[0].password)
-        location.href = '/rating'
+        location.href = '/createTask'
       }).catch(error => {
         console.log(error)
         console.log('Запрос отменен')

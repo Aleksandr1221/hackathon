@@ -1,7 +1,6 @@
 <template>
   <div>
-    <vNavbar></vNavbar>
-
+    
     <div class="row" v-for="(todo, id) in todoList" :key="id">
       <div class="col-3 pr-0">
         <div class="list-group rounded-0" id="list-tab" role="tablist">
@@ -20,12 +19,10 @@
 
 <script>
 import axios from 'axios'
-import vNavbar from '../components/navbar'
 
 export default {
   name: "Todolist",
   components: {
-    vNavbar
   },
   data: function() {
     return {

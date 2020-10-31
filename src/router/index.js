@@ -33,6 +33,11 @@ const routes = [
     path: '/createTask',
     name: 'Create task',
     component: () => import('../views/vCreateTask.vue')
+  },
+  {
+    path: '/admin',
+    name: 'Admin Panel',
+    component:()=>import('../views/vAdminPanel.vue')
   }
 ]
 

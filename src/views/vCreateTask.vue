@@ -1,17 +1,31 @@
 <template>
   <div>
-    <vNavbar></vNavbar>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Task Menager</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav burger-menu">
+            <a class="nav-link">Команда</a>
+            <a class="nav-link">Отчеты</a>
+            <a class="nav-link">Рейтинг</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
     <div class="row m-0">
-      <div class="col-3 pr-0 pl-0">
+      <div class="col-3 pr-0 pl-0 saidbar">
         <ul class="list-group rounded-0">
-          <li class="list-group-item p-3">Cras justo odio</li>
-          <li class="list-group-item p-3">Dapibus ac facilisis in</li>
-          <li class="list-group-item p-3">Morbi leo risus</li>
-          <li class="list-group-item p-3">Porta ac consectetur ac</li>
-          <li class="list-group-item p-3">Vestibulum at eros</li>
+          <li class="list-group-item p-3">Команда</li>
+          <li class="list-group-item p-3">Отчеты</li>
+          <li class="list-group-item p-3">Рейтинг</li>
         </ul>
       </div>
-      <div class="col-9 border-top pl-5">
+      <div class="col-9 border-top pl-5 my_command mb-5">
         <h2 class="mt-4">Моя команда</h2>
         
         <div class="row row-cols-1 mt-1 row-cols-md-2 g-5 w-100">
@@ -64,7 +78,6 @@
 
 <script>
 import axios from 'axios'
-import vNavbar from '../components/navbar'
 
 export default {
   data: function() {
@@ -73,7 +86,6 @@ export default {
     }
   },
   components: {
-    vNavbar
   },
   methods: {
     get_my_command: async function() {
@@ -85,6 +97,19 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.burger-menu {
+  display: none;
+}
+  @media (max-width:767px) {
+    .saidbar {
+      display: none !important;
+    }
+    .my_command {
+      width: 100%;
+    }
+    .burger-menu {
+      display: unset;
+    }
+  }
 </style>

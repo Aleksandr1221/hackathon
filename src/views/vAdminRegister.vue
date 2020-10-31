@@ -54,7 +54,6 @@ export default {
       firstname: '',
       lastname: '',
       middlename: '',
-      CompanyName: '',
       position: '',
       email: '',
       password: ''

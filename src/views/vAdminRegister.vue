@@ -24,10 +24,7 @@
   </div>
 
   <div class="row">
-    <div class="form__group col-md-6">
-      <input v-model="CompanyName" class="form__input" placeholder=" " required>
-      <label class="form__label_row">Название компании</label>
-    </div>
+
     <div class="form__group col-md-6">
       <input v-model="position" class="form__input" placeholder=" " required>
       <label class="form__label_row">Должность</label>

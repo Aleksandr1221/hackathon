@@ -1,8 +1,8 @@
 <template>
-    <nav class="navbar navbar-light bg-light border-bottom">
+    <nav class="navbar navbar-light bg-light pb-5">
     <div class="w-100 navbar__div container">
       
-      <svg v-if="theme" @click="Theme()" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-sun float-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <!--<svg v-if="theme" @click="Theme()" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-sun float-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path d="M3.5 8a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0z"/>
         <path fill-rule="evenodd" d="M8.202.28a.25.25 0 0 0-.404 0l-.91 1.255a.25.25 0 0 1-.334.067L5.232.79a.25.25 0 0 0-.374.155l-.36 1.508a.25.25 0 0 
         1-.282.19l-1.532-.245a.25.25 0 0 0-.286.286l.244 1.532a.25.25 0 0 1-.189.282l-1.509.36a.25.25 0 0 0-.154.374l.812 1.322a.25.25 0 0 1-.067.333l-1.256.91a.25.25 
@@ -15,7 +15,7 @@
 
       <svg v-if="!theme" @click="Theme()" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-moon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z"/>
-      </svg>
+      </svg>-->
     </div>
   </nav>
 </template>

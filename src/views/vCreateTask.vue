@@ -1,17 +1,58 @@
 <template>
   <div>
     <vNavbar></vNavbar>
-    <div class="row">
-      <div class="col-3 pr-0">
-        <div class="list-group rounded-0" id="list-tab" role="tablist">
-          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab">Admin</a>
-          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+    <div class="row m-0">
+      <div class="col-3 pr-0 pl-0">
+        <ul class="list-group rounded-0">
+          <li class="list-group-item p-3">Cras justo odio</li>
+          <li class="list-group-item p-3">Dapibus ac facilisis in</li>
+          <li class="list-group-item p-3">Morbi leo risus</li>
+          <li class="list-group-item p-3">Porta ac consectetur ac</li>
+          <li class="list-group-item p-3">Vestibulum at eros</li>
+        </ul>
+      </div>
+      <div class="col-9 border-top pl-5">
+        <h2 class="mt-4">Моя команда</h2>
+        
+        <div class="row row-cols-1 mt-1 row-cols-md-2 g-5 w-100">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Название карточки</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button class="btn btn-primary">Добавить</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Название карточки</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button class="btn btn-primary">Добавить</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Название карточки</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button class="btn btn-primary">Добавить</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Название карточки</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button class="btn btn-primary">Добавить</button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-9">
-        <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">1</div>
-      </div>
+
       </div>
     </div>
   </div>
@@ -31,7 +72,7 @@ export default {
     vNavbar
   },
   methods: {
-    get_command: async function() {
+    get_my_command: async function() {
       await axios.get('')
       .then(res => (console.log(res)))
       .catch(e => console.log(e))

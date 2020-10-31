@@ -1,6 +1,5 @@
 <template>
 <div>
-  <vNavbar></vNavbar>
 
   <div class="row" v-for="(todo, id) in todoList" :key="id">
   <div class="col-3 pr-0">
@@ -20,13 +19,9 @@
 
 <script>
 import axios from 'axios'
-import vNavbar from '../components/navbar'
 
 export default {
   name: "Todolist",
-  components: {
-    vNavbar
-  },
   data: function() {
     return {
       todoList: []
@@ -38,12 +33,15 @@ export default {
       .then((response) => (
         console.log(response),
         response.data.find(element => element.username === localStorage.getItem('localEmail')).tasks.forEach(element => {
-          this.todoList = element
+          this.todoList.push({name: element.name, desc: element.desc})
           console.log(element)
         })
 
       )).catch(error => (console.log(error)))
     }
+  },
+  mounted() {
+    this.getTodo()
   }
 }
 </script>

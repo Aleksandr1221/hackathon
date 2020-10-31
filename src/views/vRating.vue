@@ -38,6 +38,7 @@ export default {
     get_users: async function() {
       await axios.get('https://vk-hack-ykt.herokuapp.com/registration/')
       .then(response => (
+        //console.log(response.data.find(element => element.roles[0].name == "ROLE_USER")),
         this.ratingList = response.data,
         console.log(response)
       ))

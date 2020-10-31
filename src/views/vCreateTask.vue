@@ -20,9 +20,9 @@
     <div class="row m-0">
       <div class="col-3 pr-0 pl-0 saidbar">
         <ul class="list-group rounded-0">
-          <li class="list-group-item p-3">Команда</li>
-          <li class="list-group-item p-3">Отчеты</li>
-          <li class="list-group-item p-3">Рейтинг</li>
+          <li class="list-group-item list-group-item-action p-3">Команда</li>
+          <li class="list-group-item list-group-item-action p-3">Отчеты</li>
+          <li class="list-group-item list-group-item-action p-3">Рейтинг</li>
         </ul>
       </div>
       <div class="col-9 border-top pl-5 my_command mb-5">
@@ -82,7 +82,7 @@ import axios from 'axios'
 export default {
   data: function() {
     return {
-
+      my_command: []
     }
   },
   components: {

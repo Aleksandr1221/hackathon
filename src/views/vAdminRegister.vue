@@ -23,13 +23,13 @@
     </div>
   </div>
 
-  <div class="row">
 
-    <div class="form__group col-md-6">
+
+    <div class="form__group">
       <input v-model="position" class="form__input" placeholder=" " required>
-      <label class="form__label_row">Должность</label>
+      <label class="form__label">Должность</label>
     </div>
-  </div>
+
 
     <div class="form__group">
       <input v-model="email" type="email" class="form__input" placeholder=" " required>
@@ -40,7 +40,7 @@
       <label class="form__label">Придумайте пароль</label>
     </div>
 
-    <button @click="submitForm()" class="form__button">Регистрация</button>
+    <button @click="submitAdmin()" class="form__button">Регистрация</button>
   </form>
 </div>
 </template>
@@ -60,7 +60,7 @@ export default {
     }
   },
   methods: {
-    submitForm: async function() {
+    submitAdmin: async function() {
       //e.preventDefault()
       await axios.post('https://vk-hack-ykt.herokuapp.com/registration/admin', {
         firstname: this.firstname,
@@ -74,7 +74,7 @@ export default {
         //console.log(a.obj[0].fullname)
         localStorage.setItem('localEmail', a.obj[0].username)
         localStorage.setItem('localPass', a.obj[0].password)
-        location.href = '/createTask'
+        location.href = '/choiceUserAdmin'
       }).catch(error => {
         console.log(error)
         console.log('Запрос отменен')

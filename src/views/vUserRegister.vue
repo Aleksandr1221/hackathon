@@ -3,7 +3,7 @@
   <form action="" class="form">
     <div class="d-flex">
       <router-link to="/">
-      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMmVtIiBoZWlnaHQ9IjJlbSIgdmlld0JveD0iMCAwIDE2IDE2IiBjbGFzcz0iYmkgYmktY2FyZXQtbGVmdC1maWxsIiBmaWxsPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQogICAgICAgIDxwYXRoIGQ9Ik0zLjg2IDguNzUzbDUuNDgyIDQuNzk2Yy42NDYuNTY2IDEuNjU4LjEwNiAxLjY1OC0uNzUzVjMuMjA0YTEgMSAwIDAgMC0xLjY1OS0uNzUzbC01LjQ4IDQuNzk2YTEgMSAwIDAgMCAwIDEuNTA2eiIvPg0KICAgICAgPC9zdmc+" alt="">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMmVtIiBoZWlnaHQ9IjJlbSIgdmlld0JveD0iMCAwIDE2IDE2IiBjbGFzcz0iYmkgYmktY2FyZXQtbGVmdC1maWxsIiBmaWxsPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQogICAgICAgIDxwYXRoIGQ9Ik0zLjg2IDguNzUzbDUuNDgyIDQuNzk2Yy42NDYuNTY2IDEuNjU4LjEwNiAxLjY1OC0uNzUzVjMuMjA0YTEgMSAwIDAgMC0xLjY1OS0uNzUzbC01LjQ4IDQuNzk2YTEgMSAwIDAgMCAwIDEuNTA2eiIvPg0KICAgICAgPC9zdmc+" alt="">
       </router-link>
       <h2 class="form__title mb-5">Регистрация работника</h2>
     </div>

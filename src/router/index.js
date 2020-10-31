@@ -38,6 +38,11 @@ const routes = [
     path: '/admin',
     name: 'Admin Panel',
     component:()=>import('../views/vAdminPanel.vue')
+  },
+  {
+    path: '/choiceUserAdmin',
+    name: 'Choice User Admin',
+    component:()=>import('../views/vChoiceUserAdmin.vue')
   }
 ]
 

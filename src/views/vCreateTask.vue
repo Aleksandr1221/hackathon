@@ -3,7 +3,7 @@
 
     <nav class="navbar navbar-expand-md navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Task Menager</a>
+        <a class="navbar-brand" href="#">GoTask</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -56,7 +56,7 @@
     </div>
         </div>
         
-        <div class="row row-cols-1 mt-1 row-cols-md-2 g-5 w-100" v-if="my_command.length">
+        <div class="row row-cols-1 mt-1 row-cols-md-2 g-5 w-100" v-if="my_command.length > 0">
           <div class="col" v-for="(team, id) in my_command" :key="id">
             <div class="card">
               <div class="card-body">

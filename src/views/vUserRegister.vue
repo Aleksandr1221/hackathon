@@ -24,13 +24,17 @@
   </div>
 
   <div class="row">
-    <div class="form__group col-md-6">
+    <div class="form__group col-md-4">
       <input v-model="CompanyName" class="form__input" placeholder=" " required>
       <label class="form__label_row">Название компании</label>
     </div>
-    <div class="form__group col-md-6">
+    <div class="form__group col-md-4">
       <input v-model="position" class="form__input" placeholder=" " required>
       <label class="form__label_row">Должность</label>
+    </div>
+    <div class="form__group col-md-4">
+      <input v-model="teamId" class="form__input" placeholder=" " required>
+      <label class="form__label_row">ID команды</label>
     </div>
   </div>
 
@@ -60,7 +64,8 @@ export default {
       CompanyName: '',
       position: '',
       email: '',
-      password: ''
+      password: '',
+      teamId: ''
     }
   },
   methods: {
@@ -73,12 +78,15 @@ export default {
         password: this.password,
         companyName: this.CompanyName,
         position: this.position,
-        fullName: `${this.lastname} ${this.firstname} ${this.middlename}`
+        fullName: `${this.lastname} ${this.firstname} ${this.middlename}`,
+        team: {"id": `${this.teamId}`},
+        clientsTeamId: this.teamId
       }).then(response => {
         let a = eval('({obj:[' + response.config.data + ']})');
         //console.log(a.obj[0].fullname)
         localStorage.setItem('localEmail', a.obj[0].username)
         localStorage.setItem('localPass', a.obj[0].password)
+
         location.href = '/rating'
       }).catch(error => {
         console.log(error)

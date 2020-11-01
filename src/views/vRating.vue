@@ -40,7 +40,7 @@ export default {
       .then(response => (
         //console.log(response.data.find(element => element.roles[0].name == "ROLE_USER")),
         
-        this.ratingList = response.data.filter(user => {return user.companys.length == 0}),
+      this.ratingList = response.data.filter(user => {return user.companys.length == 0}),
         console.log(response)
       ))
       .catch(error => (console.log(error)))

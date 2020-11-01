@@ -48,6 +48,11 @@ const routes = [
     path: '/adminRating',
     name: 'Admin rating',
     component:()=>import('../views/vAdminRating.vue')
+  },
+  {
+    path: '/teamUsers',
+    name: 'Team users',
+    component:()=>import('../views/vTeamUser.vue')
   }
 ]
 

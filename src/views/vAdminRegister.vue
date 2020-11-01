@@ -40,7 +40,7 @@
       <label class="form__label">Придумайте пароль</label>
     </div>
 
-    <button @click="submitAdmin()" class="form__button">Регистрация</button>
+    <button @click="submitAdmin()" type="button" class="form__button">Регистрация</button>
   </form>
 </div>
 </template>

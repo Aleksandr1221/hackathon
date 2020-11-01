@@ -78,14 +78,13 @@ export default {
         password: this.password,
         companyName: this.CompanyName,
         position: this.position,
-        fullName: `${this.lastname} ${this.firstname} ${this.middlename}`,
-        team: {"id": `${this.teamId}`},
-        clientsTeamId: this.teamId
+        fullName: `${this.lastname} ${this.firstname} ${this.middlename}`//,
+        //team: {"id": `${this.teamId}`},
+        //clientsTeamId: this.teamId
       }).then(response => {
-        let a = eval('({obj:[' + response.config.data + ']})');
-        //console.log(a.obj[0].fullname)
-        localStorage.setItem('localEmail', a.obj[0].username)
-        localStorage.setItem('localPass', a.obj[0].password)
+        //console.log(a.obj[0].fullname),
+        localStorage.setItem('localEmail', eval('({obj:[' + response.config.data + ']})').obj[0].username)
+        localStorage.setItem('localPass', eval('({obj:[' + response.config.data + ']})').obj[0].password)
 
         location.href = '/rating'
       }).catch(error => {
